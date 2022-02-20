@@ -15,6 +15,10 @@ const images = [
 const $list = document.querySelector(".gallery");
 
 const markup = images
-  .map((image) => `<li><img src="${image.url}" alt="${image.alt}"></li>`)
+  .map((image) => `<li><img width="600px" height="400px" src="${image.url}" alt="${image.alt}"></li>`)
   .join("");
+
+$list.style.display = "flex";
+$list.style.listStyleType = "none";
+$list.style.justifyContent = "space-between";
 $list.insertAdjacentHTML("beforeend", markup);

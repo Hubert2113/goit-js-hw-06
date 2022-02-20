@@ -7,9 +7,9 @@ $changeColorBtn.addEventListener("click", () => {
   colorChanger(getRandomHexColor());
 });
 
-function colorChanger(callback) {
-  $body.style.backgroundColor = callback;
-  $currentColor.textContent = callback;
+function colorChanger(color) {
+  $body.style.backgroundColor = color;
+  $currentColor.textContent = color;
 }
 
 function getRandomHexColor() {
