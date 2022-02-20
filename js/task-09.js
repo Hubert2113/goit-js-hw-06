@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 const $body = document.querySelector("body");
 const $currentColor = document.querySelector(".color");
 const $changeColorBtn = document.querySelector(".change-color");
@@ -6,8 +6,6 @@ const $changeColorBtn = document.querySelector(".change-color");
 $changeColorBtn.addEventListener("click", () => {
   colorChanger(getRandomHexColor());
 });
-
-
 
 function colorChanger(callback) {
   $body.style.backgroundColor = callback;
